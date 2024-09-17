@@ -6,7 +6,7 @@
  */
 
 import resolve from '@rollup/plugin-node-resolve';
-import { transform } from "@swc/core";
+import swc from '@rollup/plugin-swc';
 import pkg from './package.json' assert {type: 'json'};
 
 const extensions = [
@@ -29,21 +29,7 @@ export default [
             resolve({ extensions}),
 
             // Compile TypeScript/JavaScript files
-            {
-                name: 'swc',
-                transform(code) {
-                    return transform(code, {
-                        jsc: {
-                            target: 'es2016',
-                            parser: {
-                                syntax: 'typescript'
-                            },
-                            loose: true
-                        },
-                        sourceMaps: true
-                    });
-                }
-            }
+            swc()
         ],
         output: [
             {

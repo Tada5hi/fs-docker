@@ -25,6 +25,9 @@
     "files": [
         "dist/"
     ],
+    "engines": {
+        "node": ">=20.0.0"
+    },
     "scripts": {
         "build:types": "tsc --emitDeclarationOnly",
         "build:js": "rollup -c",
@@ -44,24 +47,25 @@
     ],
     "license": "MIT",
     "devDependencies": {
-        "@rollup/plugin-node-resolve": "^15.1.0",
-        "@swc/core": "^1.3.61",
-        "@tada5hi/eslint-config-typescript": "^1.1.9",
-        "@tada5hi/semantic-release": "^0.1.0",
-        "@tada5hi/tsconfig": "^0.4.0",
-        "@types/jest": "^29.5.2",
-        "@types/node": "^20.2.5",
+        "@rollup/plugin-node-resolve": "^15.2.3",
+        "@rollup/plugin-swc": "^0.4.0",
+        "@swc/core": "^1.7.26",
+        "@tada5hi/eslint-config-typescript": "^1.2.12",
+        "@tada5hi/semantic-release": "^0.3.1",
+        "@tada5hi/tsconfig": "^0.5.1",
+        "@types/jest": "^29.5.13",
+        "@types/node": "^22.5.5",
         "cross-env": "^7.0.3",
-        "eslint": "^8.41.0",
-        "jest": "^29.5.0",
-        "rimraf": "^5.0.1",
-        "rollup": "^3.23.0",
-        "semantic-release": "^21.0.2",
-        "ts-jest": "^29.1.0",
-        "typescript": "^5.0.4"
+        "eslint": "^8.57.1",
+        "jest": "^29.7.0",
+        "rimraf": "^6.0.1",
+        "rollup": "^4.21.3",
+        "semantic-release": "^22.0.12",
+        "ts-jest": "^29.2.5",
+        "typescript": "^5.6.2"
     },
     "dependencies": {
-        "locter": "^1.1.2",
-        "smob": "^1.4.0"
+        "locter": "^2.1.1",
+        "smob": "^1.5.0"
     }
 }
