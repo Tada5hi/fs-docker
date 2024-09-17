@@ -61,7 +61,7 @@
         "typescript": "^5.0.4"
     },
     "dependencies": {
-        "locter": "^1.1.2",
+        "locter": "^2.1.1",
         "smob": "^1.4.0"
     }
 }
