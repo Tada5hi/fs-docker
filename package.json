@@ -49,7 +49,7 @@
     "devDependencies": {
         "@rollup/plugin-node-resolve": "^15.2.3",
         "@rollup/plugin-swc": "^0.4.0",
-        "@swc/core": "^1.7.26",
+        "@swc/core": "^1.8.0",
         "@tada5hi/eslint-config-typescript": "^1.2.12",
         "@tada5hi/semantic-release": "^0.3.1",
         "@tada5hi/tsconfig": "^0.5.1",
